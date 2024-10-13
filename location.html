@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pickup and Drop-off Location Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 140px;
+           
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            color: beige;
+            padding: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: -webkit-linear-gradient(grey,black);
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color:rgba(212, 167, 98, 0.7);
+            color: whitesmoke;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color:black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pickup and Drop-off Location Form</h1>
+        <form action="submit_location.php" method="post">
+            <label for="pickup_location">Pickup Location:</label>
+            <input type="text" id="pickup_location" name="pickup_location" required>
+
+            <label for="dropoff_location">Drop-off Location:</label>
+            <input type="text" id="dropoff_location" name="dropoff_location" required>
+
+            <input type="submit" value="See Price">
+        </form>
+    </div>
+</body>
+</html>
